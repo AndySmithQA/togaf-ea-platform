@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-03-01T09:00:00.000Z",
+  "framework": "TOGAF ACF",
+  "scores": [
+    { "dimension": "Architecture Governance",      "level": 3, "comment": "Board running fortnightly; cadence held." },
+    { "dimension": "Architecture Capability",      "level": 3, "comment": "37 FTE; capability map current." },
+    { "dimension": "Architecture Skills",          "level": 2, "comment": "TOGAF cert at 14/37; gap to close in FY27." },
+    { "dimension": "Architecture Method (ADM)",    "level": 3, "comment": "Tailored framework adopted; followed inconsistently in tactical work." },
+    { "dimension": "Reference Models & Standards", "level": 2, "comment": "Standards exist; not always traceable." },
+    { "dimension": "Architecture Repository",      "level": 2, "comment": "Migration to git-based repo in flight." },
+    { "dimension": "Architecture Compliance",      "level": 1, "comment": "Reviews routinely skipped under £500k." },
+    { "dimension": "Stakeholder Engagement",       "level": 2, "comment": "Monthly EA business forum being introduced." }
+  ],
+  "overall": 2.4
+}

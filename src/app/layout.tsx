@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nav } from "@/components/nav";
+import { ActiveRepoPill } from "@/components/active-repo-pill";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
@@ -15,7 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <TooltipProvider delayDuration={150}>
           <div className="flex min-h-screen">
-            <Nav />
+            <Nav>
+              <ActiveRepoPill />
+            </Nav>
             <main className="flex-1 min-w-0">
               {children}
             </main>

@@ -1,14 +1,33 @@
 {
   "name": "togaf-ea-platform",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Mock-up of a TOGAF 10 Architecture Repository plus an Enterprise Architecture management web application: maturity dashboard, RfAW review, ADM cycle visualisation, document generation agent, sign-off gates and business-model views.",
+  "version": "0.2.0",
+  "description": "Spec-Kit-style toolkit for TOGAF 10 Enterprise Architecture: a CLI that installs slash commands and an Architecture Repository skeleton into any folder, plus a Next.js dashboard that points at the active folder.",
+  "bin": {
+    "togaf": "./cli/togaf.mjs"
+  },
+  "files": [
+    "cli/",
+    "commands/",
+    "skeleton/",
+    "templates/",
+    "examples/",
+    "src/",
+    "public/",
+    "next.config.ts",
+    "tailwind.config.ts",
+    "postcss.config.mjs",
+    "tsconfig.json",
+    "components.json",
+    "README.md",
+    "INSTALL.md"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "togaf": "node ./cli/togaf.mjs"
   },
   "dependencies": {
     "next": "^15.1.6",

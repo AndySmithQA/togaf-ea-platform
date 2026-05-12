@@ -1,0 +1,1939 @@
+{
+  "ENG-2026-001-omnichannel": {
+    "id": "ENG-2026-001-omnichannel",
+    "name": "Omnichannel Customer Experience Programme",
+    "sponsor": "Helena Vasquez (Group COO)",
+    "createdAt": "2026-03-12T09:00:00.000Z",
+    "rfawApproved": true,
+    "rfawApprovedBy": "Architecture Board",
+    "rfawApprovedAt": "2026-03-12T15:30:00.000Z",
+    "activePhase": "B",
+    "documents": {
+      "request-for-architecture-work": {
+        "id": "request-for-architecture-work",
+        "filename": "A-request-for-architecture-work.md",
+        "title": "Request for Architecture Work (RfAW)",
+        "phase": "A",
+        "status": "approved",
+        "generatedAt": "2026-03-05T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Organisation Sponsors\" present",
+            "kind": "auto",
+            "requiredHeading": "Organisation Sponsors",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Business Goals (and Changes)\" present",
+            "kind": "auto",
+            "requiredHeading": "Business Goals (and Changes)",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Time Limits\" present",
+            "kind": "auto",
+            "requiredHeading": "Time Limits",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-3",
+            "label": "Section \"Budget Information, Financial Constraints\" present",
+            "kind": "auto",
+            "requiredHeading": "Budget Information, Financial Constraints",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-4",
+            "label": "Section \"External Constraints, Business Constraints\" present",
+            "kind": "auto",
+            "requiredHeading": "External Constraints, Business Constraints",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Architecture Board",
+            "checkedAt": "2026-03-12T15:30:00.000Z"
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Lead Architect",
+            "checkedAt": "2026-03-12T15:00:00.000Z"
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Sponsor",
+            "checkedAt": "2026-03-12T15:30:00.000Z"
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Architecture Board",
+            "checkedAt": "2026-03-12T15:30:00.000Z"
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "Architecture Board",
+          "signedOffAt": "2026-03-12T15:30:00.000Z",
+          "comment": "Approved unanimously."
+        }
+      },
+      "statement-of-architecture-work": {
+        "id": "statement-of-architecture-work",
+        "filename": "A-statement-of-architecture-work.md",
+        "title": "Statement of Architecture Work (SoAW)",
+        "phase": "A",
+        "status": "approved",
+        "generatedAt": "2026-03-26T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Architecture Project Description and Scope\" present",
+            "kind": "auto",
+            "requiredHeading": "Architecture Project Description and Scope",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Roles, Responsibilities, and Deliverables\" present",
+            "kind": "auto",
+            "requiredHeading": "Roles, Responsibilities, and Deliverables",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Acceptance Criteria and Procedures\" present",
+            "kind": "auto",
+            "requiredHeading": "Acceptance Criteria and Procedures",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-3",
+            "label": "Section \"Architecture Project Plan and Schedule\" present",
+            "kind": "auto",
+            "requiredHeading": "Architecture Project Plan and Schedule",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Architecture Board",
+            "checkedAt": "2026-03-26T15:00:00.000Z"
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Lead Architect",
+            "checkedAt": "2026-03-26T14:30:00.000Z"
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Sponsor",
+            "checkedAt": "2026-03-26T15:00:00.000Z"
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Architecture Board",
+            "checkedAt": "2026-03-26T15:00:00.000Z"
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "Architecture Board",
+          "signedOffAt": "2026-03-26T15:00:00.000Z"
+        }
+      },
+      "architecture-vision": {
+        "id": "architecture-vision",
+        "filename": "A-architecture-vision.md",
+        "title": "Architecture Vision",
+        "phase": "A",
+        "status": "approved",
+        "generatedAt": "2026-04-23T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Problem Description\" present",
+            "kind": "auto",
+            "requiredHeading": "Problem Description",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Objective of the Engagement\" present",
+            "kind": "auto",
+            "requiredHeading": "Objective of the Engagement",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Mapped Requirements\" present",
+            "kind": "auto",
+            "requiredHeading": "Mapped Requirements",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Steering Committee",
+            "checkedAt": "2026-04-23T15:00:00.000Z"
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Lead Architect",
+            "checkedAt": "2026-04-22T11:00:00.000Z"
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Architecture Board",
+            "checkedAt": "2026-04-23T15:00:00.000Z"
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Architecture Board",
+            "checkedAt": "2026-04-23T15:00:00.000Z"
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "Architecture Board",
+          "signedOffAt": "2026-04-23T15:00:00.000Z"
+        }
+      },
+      "stakeholder-map": {
+        "id": "stakeholder-map",
+        "filename": "A-stakeholder-map.md",
+        "title": "Stakeholder Map",
+        "phase": "A",
+        "status": "approved",
+        "generatedAt": "2026-04-10T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Stakeholder Catalog\" present",
+            "kind": "auto",
+            "requiredHeading": "Stakeholder Catalog",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Stakeholder Concerns\" present",
+            "kind": "auto",
+            "requiredHeading": "Stakeholder Concerns",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Daniel Ofori",
+            "checkedAt": "2026-04-12T11:00:00.000Z"
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Lead Architect",
+            "checkedAt": "2026-04-12T11:00:00.000Z"
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Architecture Board",
+            "checkedAt": "2026-04-23T15:00:00.000Z"
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "Architecture Board",
+          "signedOffAt": "2026-04-23T15:00:00.000Z"
+        }
+      },
+      "business-scenarios": {
+        "id": "business-scenarios",
+        "filename": "A-business-scenarios.md",
+        "title": "Business Scenarios",
+        "phase": "A",
+        "status": "approved",
+        "generatedAt": "2026-04-15T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Problem\" present",
+            "kind": "auto",
+            "requiredHeading": "Problem",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Objectives\" present",
+            "kind": "auto",
+            "requiredHeading": "Objectives",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Specific Requirements\" present",
+            "kind": "auto",
+            "requiredHeading": "Specific Requirements",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "Architecture Board",
+          "signedOffAt": "2026-04-23T15:00:00.000Z"
+        }
+      },
+      "communications-plan": {
+        "id": "communications-plan",
+        "filename": "A-communications-plan.md",
+        "title": "Communications Plan",
+        "phase": "A",
+        "status": "approved",
+        "generatedAt": "2026-04-15T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Identified Stakeholders\" present",
+            "kind": "auto",
+            "requiredHeading": "Identified Stakeholders",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Communications Channels\" present",
+            "kind": "auto",
+            "requiredHeading": "Communications Channels",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "Architecture Board",
+          "signedOffAt": "2026-04-23T15:00:00.000Z"
+        }
+      },
+      "business-architecture": {
+        "id": "business-architecture",
+        "filename": "B-business-architecture.md",
+        "title": "Business Architecture",
+        "phase": "B",
+        "status": "in-review",
+        "generatedAt": "2026-06-12T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Baseline Business Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Baseline Business Architecture",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Target Business Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Target Business Architecture",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Gap Analysis\" present",
+            "kind": "auto",
+            "requiredHeading": "Gap Analysis",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Smoke Test",
+            "checkedAt": "2026-05-01T10:49:24.578Z"
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true,
+            "checkedBy": "Lead Architect",
+            "checkedAt": "2026-06-15T10:00:00.000Z"
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "architecture-definition-document": {
+        "id": "architecture-definition-document",
+        "filename": "B-architecture-definition-document.md",
+        "title": "Architecture Definition Document (ADD)",
+        "phase": "B",
+        "status": "draft",
+        "generatedAt": "2026-06-20T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Scope\" present",
+            "kind": "auto",
+            "requiredHeading": "Scope",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Baseline Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Baseline Architecture",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Target Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Target Architecture",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-3",
+            "label": "Section \"Gap Analysis\" present",
+            "kind": "auto",
+            "requiredHeading": "Gap Analysis",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "data-architecture": {
+        "id": "data-architecture",
+        "filename": "C-D-data-architecture.md",
+        "title": "Data Architecture",
+        "phase": "C-D",
+        "status": "draft",
+        "generatedAt": "2026-07-01T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Baseline Data Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Baseline Data Architecture",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Target Data Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Target Data Architecture",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Gap Analysis\" present",
+            "kind": "auto",
+            "requiredHeading": "Gap Analysis",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "application-architecture": {
+        "id": "application-architecture",
+        "filename": "C-A-application-architecture.md",
+        "title": "Application Architecture",
+        "phase": "C-A",
+        "status": "draft",
+        "generatedAt": "2026-07-05T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Baseline Application Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Baseline Application Architecture",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Target Application Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Target Application Architecture",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Gap Analysis\" present",
+            "kind": "auto",
+            "requiredHeading": "Gap Analysis",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "technology-architecture": {
+        "id": "technology-architecture",
+        "filename": "D-technology-architecture.md",
+        "title": "Technology Architecture",
+        "phase": "D",
+        "status": "missing",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Baseline Technology Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Baseline Technology Architecture",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Target Technology Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Target Technology Architecture",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Gap Analysis\" present",
+            "kind": "auto",
+            "requiredHeading": "Gap Analysis",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "architecture-roadmap": {
+        "id": "architecture-roadmap",
+        "filename": "E-architecture-roadmap.md",
+        "title": "Architecture Roadmap",
+        "phase": "E",
+        "status": "missing",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Work Packages\" present",
+            "kind": "auto",
+            "requiredHeading": "Work Packages",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Transition Architectures\" present",
+            "kind": "auto",
+            "requiredHeading": "Transition Architectures",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Timeline\" present",
+            "kind": "auto",
+            "requiredHeading": "Timeline",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "gap-analysis": {
+        "id": "gap-analysis",
+        "filename": "E-gap-analysis.md",
+        "title": "Gap Analysis",
+        "phase": "E",
+        "status": "missing",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Consolidated Gap List\" present",
+            "kind": "auto",
+            "requiredHeading": "Consolidated Gap List",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Mitigation Approach\" present",
+            "kind": "auto",
+            "requiredHeading": "Mitigation Approach",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "architecture-building-blocks": {
+        "id": "architecture-building-blocks",
+        "filename": "E-architecture-building-blocks.md",
+        "title": "Architecture Building Blocks (ABBs)",
+        "phase": "E",
+        "status": "missing",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"ABB Catalog\" present",
+            "kind": "auto",
+            "requiredHeading": "ABB Catalog",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "solution-building-blocks": {
+        "id": "solution-building-blocks",
+        "filename": "E-solution-building-blocks.md",
+        "title": "Solution Building Blocks (SBBs)",
+        "phase": "E",
+        "status": "missing",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"SBB Catalog\" present",
+            "kind": "auto",
+            "requiredHeading": "SBB Catalog",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Mapping ABB → SBB\" present",
+            "kind": "auto",
+            "requiredHeading": "Mapping ABB → SBB",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "trade-off-analysis": {
+        "id": "trade-off-analysis",
+        "filename": "E-trade-off-analysis.md",
+        "title": "Trade-off Analysis",
+        "phase": "E",
+        "status": "draft",
+        "generatedAt": "2026-08-01T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Options Considered\" present",
+            "kind": "auto",
+            "requiredHeading": "Options Considered",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Trade-off Matrix (Cost / Time / Risk / Quality / Capability)\" present",
+            "kind": "auto",
+            "requiredHeading": "Trade-off Matrix (Cost / Time / Risk / Quality / Capability)",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Recommendations\" present",
+            "kind": "auto",
+            "requiredHeading": "Recommendations",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "business-models": {
+        "id": "business-models",
+        "filename": "E-business-models.md",
+        "title": "Business Models",
+        "phase": "E",
+        "status": "draft",
+        "generatedAt": "2026-08-05T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Customer Segments\" present",
+            "kind": "auto",
+            "requiredHeading": "Customer Segments",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Value Propositions\" present",
+            "kind": "auto",
+            "requiredHeading": "Value Propositions",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Revenue Streams\" present",
+            "kind": "auto",
+            "requiredHeading": "Revenue Streams",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-3",
+            "label": "Section \"Cost Structure\" present",
+            "kind": "auto",
+            "requiredHeading": "Cost Structure",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-4",
+            "label": "Section \"Linked Architecture Outcomes\" present",
+            "kind": "auto",
+            "requiredHeading": "Linked Architecture Outcomes",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "implementation-and-migration-plan": {
+        "id": "implementation-and-migration-plan",
+        "filename": "F-implementation-and-migration-plan.md",
+        "title": "Implementation and Migration Plan",
+        "phase": "F",
+        "status": "missing",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Work Package Sequencing\" present",
+            "kind": "auto",
+            "requiredHeading": "Work Package Sequencing",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Cost / Benefit / Risk Per Project\" present",
+            "kind": "auto",
+            "requiredHeading": "Cost / Benefit / Risk Per Project",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "implementation-governance-model": {
+        "id": "implementation-governance-model",
+        "filename": "G-implementation-governance-model.md",
+        "title": "Implementation Governance Model",
+        "phase": "G",
+        "status": "missing",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Governance Processes\" present",
+            "kind": "auto",
+            "requiredHeading": "Governance Processes",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Governance Roles and Responsibilities\" present",
+            "kind": "auto",
+            "requiredHeading": "Governance Roles and Responsibilities",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "architecture-contract": {
+        "id": "architecture-contract",
+        "filename": "G-architecture-contract.md",
+        "title": "Architecture Contract",
+        "phase": "G",
+        "status": "missing",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Scope of Architecture\" present",
+            "kind": "auto",
+            "requiredHeading": "Scope of Architecture",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Conformance Requirements\" present",
+            "kind": "auto",
+            "requiredHeading": "Conformance Requirements",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Defined Phases of Deliverables\" present",
+            "kind": "auto",
+            "requiredHeading": "Defined Phases of Deliverables",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "compliance-assessment": {
+        "id": "compliance-assessment",
+        "filename": "G-compliance-assessment.md",
+        "title": "Compliance Assessment",
+        "phase": "G",
+        "status": "missing",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Findings\" present",
+            "kind": "auto",
+            "requiredHeading": "Findings",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Recommendations\" present",
+            "kind": "auto",
+            "requiredHeading": "Recommendations",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Decision\" present",
+            "kind": "auto",
+            "requiredHeading": "Decision",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "change-requests": {
+        "id": "change-requests",
+        "filename": "H-change-requests.md",
+        "title": "Change Requests",
+        "phase": "H",
+        "status": "missing",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Change Request Catalog\" present",
+            "kind": "auto",
+            "requiredHeading": "Change Request Catalog",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Classification (Simplification / Incremental / Re-architecting)\" present",
+            "kind": "auto",
+            "requiredHeading": "Classification (Simplification / Incremental / Re-architecting)",
+            "checked": false,
+            "autoResult": "fail"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "architecture-requirements-specification": {
+        "id": "architecture-requirements-specification",
+        "filename": "RM-architecture-requirements-specification.md",
+        "title": "Architecture Requirements Specification",
+        "phase": "RM",
+        "status": "in-review",
+        "generatedAt": "2026-04-23T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Architecture Requirements (Functional & Non-Functional)\" present",
+            "kind": "auto",
+            "requiredHeading": "Architecture Requirements (Functional & Non-Functional)",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Constraints\" present",
+            "kind": "auto",
+            "requiredHeading": "Constraints",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Assumptions\" present",
+            "kind": "auto",
+            "requiredHeading": "Assumptions",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": false
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": false
+          }
+        ],
+        "signoff": {
+          "signedOff": false
+        }
+      },
+      "organizational-model": {
+        "id": "organizational-model",
+        "filename": "P-organizational-model.md",
+        "title": "Organizational Model for Enterprise Architecture",
+        "phase": "P",
+        "status": "approved",
+        "generatedAt": "2026-02-14T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Roles and Responsibilities\" present",
+            "kind": "auto",
+            "requiredHeading": "Roles and Responsibilities",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Governance and Support Strategy\" present",
+            "kind": "auto",
+            "requiredHeading": "Governance and Support Strategy",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "Chief Architect",
+          "signedOffAt": "2026-02-14T15:00:00.000Z"
+        }
+      },
+      "tailored-architecture-framework": {
+        "id": "tailored-architecture-framework",
+        "filename": "P-tailored-architecture-framework.md",
+        "title": "Tailored Architecture Framework",
+        "phase": "P",
+        "status": "approved",
+        "generatedAt": "2026-01-20T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Tailored Architecture Method\" present",
+            "kind": "auto",
+            "requiredHeading": "Tailored Architecture Method",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Tailored Architecture Content\" present",
+            "kind": "auto",
+            "requiredHeading": "Tailored Architecture Content",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "Architecture Board",
+          "signedOffAt": "2026-01-20T15:00:00.000Z"
+        }
+      },
+      "architecture-principles": {
+        "id": "architecture-principles",
+        "filename": "P-architecture-principles.md",
+        "title": "Architecture Principles",
+        "phase": "P",
+        "status": "approved",
+        "generatedAt": "2026-02-28T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Business Principles\" present",
+            "kind": "auto",
+            "requiredHeading": "Business Principles",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Data Principles\" present",
+            "kind": "auto",
+            "requiredHeading": "Data Principles",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Application Principles\" present",
+            "kind": "auto",
+            "requiredHeading": "Application Principles",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-3",
+            "label": "Section \"Technology Principles\" present",
+            "kind": "auto",
+            "requiredHeading": "Technology Principles",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "Architecture Board",
+          "signedOffAt": "2026-02-28T15:00:00.000Z"
+        }
+      },
+      "architecture-governance-framework": {
+        "id": "architecture-governance-framework",
+        "filename": "P-architecture-governance-framework.md",
+        "title": "Architecture Governance Framework",
+        "phase": "P",
+        "status": "approved",
+        "generatedAt": "2026-01-30T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Governance Process\" present",
+            "kind": "auto",
+            "requiredHeading": "Governance Process",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Governance Organisation\" present",
+            "kind": "auto",
+            "requiredHeading": "Governance Organisation",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "Architecture Board",
+          "signedOffAt": "2026-01-30T15:00:00.000Z"
+        }
+      },
+      "architecture-board-charter": {
+        "id": "architecture-board-charter",
+        "filename": "P-architecture-board-charter.md",
+        "title": "Architecture Board Charter",
+        "phase": "P",
+        "status": "approved",
+        "generatedAt": "2026-01-15T09:00:00.000Z",
+        "generator": "template",
+        "checklist": [
+          {
+            "id": "auto-0",
+            "label": "Section \"Purpose\" present",
+            "kind": "auto",
+            "requiredHeading": "Purpose",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-1",
+            "label": "Section \"Membership\" present",
+            "kind": "auto",
+            "requiredHeading": "Membership",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "auto-2",
+            "label": "Section \"Decision Rights\" present",
+            "kind": "auto",
+            "requiredHeading": "Decision Rights",
+            "checked": true,
+            "autoResult": "pass"
+          },
+          {
+            "id": "manual-stakeholder-review",
+            "label": "Reviewed with named stakeholders",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-traceability",
+            "label": "Traceability to RfAW / Vision confirmed",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-tradeoffs",
+            "label": "Trade-offs documented and accepted",
+            "kind": "manual",
+            "checked": true
+          },
+          {
+            "id": "manual-board",
+            "label": "Architecture Board endorsement recorded",
+            "kind": "manual",
+            "checked": true
+          }
+        ],
+        "signoff": {
+          "signedOff": true,
+          "signedOffBy": "CIO",
+          "signedOffAt": "2026-01-15T15:00:00.000Z"
+        }
+      }
+    },
+    "phaseStatus": {
+      "P": {
+        "phase": "P",
+        "rag": "green",
+        "completion": 1,
+        "notes": "All deliverables approved."
+      },
+      "A": {
+        "phase": "A",
+        "rag": "green",
+        "completion": 1,
+        "notes": "All deliverables approved."
+      },
+      "B": {
+        "phase": "B",
+        "rag": "amber",
+        "completion": 0,
+        "notes": "0/2 approved · 2/2 drafted"
+      },
+      "C-D": {
+        "phase": "C-D",
+        "rag": "amber",
+        "completion": 0,
+        "notes": "0/1 approved · 1/1 drafted"
+      },
+      "C-A": {
+        "phase": "C-A",
+        "rag": "amber",
+        "completion": 0,
+        "notes": "0/1 approved · 1/1 drafted"
+      },
+      "D": {
+        "phase": "D",
+        "rag": "grey",
+        "completion": 0,
+        "notes": "0/1 approved · 0/1 drafted"
+      },
+      "E": {
+        "phase": "E",
+        "rag": "amber",
+        "completion": 0,
+        "notes": "0/6 approved · 2/6 drafted"
+      },
+      "F": {
+        "phase": "F",
+        "rag": "grey",
+        "completion": 0,
+        "notes": "0/1 approved · 0/1 drafted"
+      },
+      "G": {
+        "phase": "G",
+        "rag": "grey",
+        "completion": 0,
+        "notes": "0/3 approved · 0/3 drafted"
+      },
+      "H": {
+        "phase": "H",
+        "rag": "grey",
+        "completion": 0,
+        "notes": "0/1 approved · 0/1 drafted"
+      },
+      "RM": {
+        "phase": "RM",
+        "rag": "amber",
+        "completion": 0,
+        "notes": "0/1 approved · 1/1 drafted"
+      }
+    },
+    "bcdAssessment": {
+      "generatedFrom": {
+        "rfaw": "request-for-architecture-work",
+        "vision": "architecture-vision"
+      },
+      "generatedAt": "2026-05-02T11:30:00.000Z",
+      "business": [
+        {
+          "title": "Define target operating model for omnichannel sales",
+          "rationale": "RfAW calls out fragmented channel ownership.",
+          "effort": "L",
+          "risk": "high"
+        },
+        {
+          "title": "Map customer value streams across digital/store/contact-centre",
+          "rationale": "Vision requires single customer view.",
+          "effort": "M",
+          "risk": "medium"
+        },
+        {
+          "title": "Re-baseline business capability model",
+          "rationale": "Existing capability map is 4 years stale.",
+          "effort": "M",
+          "risk": "low"
+        },
+        {
+          "title": "Define KPI tree linked to OKRs",
+          "rationale": "Vision lists outcome KPIs that lack measurement.",
+          "effort": "S",
+          "risk": "low"
+        }
+      ],
+      "data": [
+        {
+          "title": "Single Customer Identity (golden record)",
+          "rationale": "Required to unify orders across channels.",
+          "effort": "L",
+          "risk": "high"
+        },
+        {
+          "title": "Master data governance for product catalog",
+          "rationale": "Catalog drift between e-com and POS today.",
+          "effort": "M",
+          "risk": "medium"
+        },
+        {
+          "title": "Event taxonomy for order lifecycle",
+          "rationale": "Needed for real-time order orchestration.",
+          "effort": "M",
+          "risk": "medium"
+        },
+        {
+          "title": "PII data classification and retention policy",
+          "rationale": "GDPR exposure flagged in RfAW.",
+          "effort": "S",
+          "risk": "high"
+        }
+      ],
+      "application": [
+        {
+          "title": "Headless commerce platform selection",
+          "rationale": "Vision target: composable storefronts.",
+          "effort": "L",
+          "risk": "high"
+        },
+        {
+          "title": "Order orchestration service (OMS) modernisation",
+          "rationale": "Existing monolith is the bottleneck.",
+          "effort": "L",
+          "risk": "high"
+        },
+        {
+          "title": "API gateway and BFF pattern adoption",
+          "rationale": "Decouple channel apps from core services.",
+          "effort": "M",
+          "risk": "medium"
+        },
+        {
+          "title": "Customer Identity & Access Management (CIAM)",
+          "rationale": "Required for unified login.",
+          "effort": "M",
+          "risk": "medium"
+        },
+        {
+          "title": "Decommission legacy CRM portal",
+          "rationale": "Replaced by new CIAM + service desk integration.",
+          "effort": "S",
+          "risk": "low"
+        }
+      ],
+      "technology": [
+        {
+          "title": "Cloud landing zone (multi-account, hub-and-spoke)",
+          "rationale": "Vision targets cloud-first deployment.",
+          "effort": "L",
+          "risk": "medium"
+        },
+        {
+          "title": "Event streaming backbone (Kafka or equivalent)",
+          "rationale": "Underpins event-driven order lifecycle.",
+          "effort": "M",
+          "risk": "medium"
+        },
+        {
+          "title": "Container platform (Kubernetes) with golden paths",
+          "rationale": "Standardise compute for new microservices.",
+          "effort": "M",
+          "risk": "medium"
+        },
+        {
+          "title": "Observability stack (logs/metrics/traces)",
+          "rationale": "Currently siloed per app team.",
+          "effort": "M",
+          "risk": "low"
+        },
+        {
+          "title": "Zero-trust network reference design",
+          "rationale": "Mandated by Architecture Principles.",
+          "effort": "M",
+          "risk": "medium"
+        }
+      ],
+      "notes": "Phases B–D will deliver the foundational building blocks for an omnichannel commerce capability. Highest-risk items are CIAM, OMS modernisation and the Single Customer Identity — these should drive the Phase E roadmap sequencing."
+    }
+  }
+}

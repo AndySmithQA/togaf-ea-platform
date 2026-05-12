@@ -3,6 +3,12 @@ import path from "path";
 import { DELIVERABLES_BY_ID, deliverablesForPhase, ADM_PHASES, type DeliverableDef } from "./togaf";
 import { computePhaseStatus } from "./rag";
 import { defaultSnapshot } from "./maturity";
+import {
+  resolveActiveRepo,
+  engagementsFileFor,
+  maturityFileFor,
+  stateDirFor,
+} from "./config";
 import type {
   EngagementState,
   DocumentRecord,
@@ -10,12 +16,15 @@ import type {
   MaturitySnapshot,
 } from "@/types";
 
-const ROOT = process.cwd();
-export const REPO_ROOT = path.join(ROOT, "architecture-repository");
-export const ENGAGEMENTS_DIR = path.join(REPO_ROOT, "engagements");
-export const DATA_DIR = path.join(ROOT, "data");
-const ENG_STATE_FILE = path.join(DATA_DIR, "engagements.json");
-const MATURITY_FILE = path.join(DATA_DIR, "maturity.json");
+/**
+ * All filesystem access goes through here. The active Architecture Repository
+ * is resolved fresh per call (so changes from the Settings page take effect
+ * immediately without restarting the server).
+ */
+
+async function repoPath(): Promise<string> {
+  return (await resolveActiveRepo()).repoPath;
+}
 
 async function ensureDir(p: string) {
   await fs.mkdir(p, { recursive: true });
@@ -38,22 +47,25 @@ export async function writeJson(file: string, data: unknown): Promise<void> {
 // -------------------- Engagements --------------------
 
 export async function listEngagements(): Promise<EngagementState[]> {
-  const all = await readJson<Record<string, EngagementState>>(ENG_STATE_FILE, {});
+  const file = engagementsFileFor(await repoPath());
+  const all = await readJson<Record<string, EngagementState>>(file, {});
   return Object.values(all).sort(
     (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
   );
 }
 
 export async function getEngagement(id: string): Promise<EngagementState | null> {
-  const all = await readJson<Record<string, EngagementState>>(ENG_STATE_FILE, {});
+  const file = engagementsFileFor(await repoPath());
+  const all = await readJson<Record<string, EngagementState>>(file, {});
   return all[id] ?? null;
 }
 
 export async function saveEngagement(state: EngagementState): Promise<EngagementState> {
-  const all = await readJson<Record<string, EngagementState>>(ENG_STATE_FILE, {});
+  const file = engagementsFileFor(await repoPath());
+  const all = await readJson<Record<string, EngagementState>>(file, {});
   state.phaseStatus = computePhaseStatus(state);
   all[state.id] = state;
-  await writeJson(ENG_STATE_FILE, all);
+  await writeJson(file, all);
   return state;
 }
 
@@ -126,13 +138,17 @@ export function bootstrapEngagement(args: {
   return state;
 }
 
-export function engagementDir(id: string): string {
-  return path.join(ENGAGEMENTS_DIR, id);
+export async function engagementsRoot(): Promise<string> {
+  return path.join(await repoPath(), "engagements");
+}
+
+export async function engagementDir(id: string): Promise<string> {
+  return path.join(await engagementsRoot(), id);
 }
 
 export async function readDocumentBody(id: string, doc: DocumentRecord): Promise<string> {
   try {
-    const file = path.join(engagementDir(id), doc.filename);
+    const file = path.join(await engagementDir(id), doc.filename);
     return await fs.readFile(file, "utf8");
   } catch {
     return "";
@@ -144,7 +160,7 @@ export async function writeDocumentBody(
   doc: DocumentRecord,
   body: string
 ): Promise<void> {
-  const dir = engagementDir(id);
+  const dir = await engagementDir(id);
   await ensureDir(dir);
   const file = path.join(dir, doc.filename);
   await fs.writeFile(file, body, "utf8");
@@ -159,7 +175,6 @@ export function evaluateAutoChecks(doc: DocumentRecord, body: string): DocumentR
     const autoResult: "pass" | "fail" = pass ? "pass" : "fail";
     return { ...c, autoResult, checked: pass };
   });
-  // status promotion: any body present => "draft"
   let status = doc.status;
   if (body.trim().length > 0 && status === "missing") status = "draft";
   return { ...doc, checklist: newChecklist, status };
@@ -172,11 +187,11 @@ function escapeRegex(s: string): string {
 // -------------------- Maturity --------------------
 
 export async function getMaturity(): Promise<MaturitySnapshot> {
-  return readJson<MaturitySnapshot>(MATURITY_FILE, defaultSnapshot());
+  return readJson<MaturitySnapshot>(maturityFileFor(await repoPath()), defaultSnapshot());
 }
 
 export async function saveMaturity(snapshot: MaturitySnapshot): Promise<MaturitySnapshot> {
-  await writeJson(MATURITY_FILE, snapshot);
+  await writeJson(maturityFileFor(await repoPath()), snapshot);
   return snapshot;
 }
 
@@ -190,7 +205,8 @@ export interface RepoFile {
 }
 
 export async function readRepoTree(rel = ""): Promise<RepoFile[]> {
-  const abs = path.join(REPO_ROOT, rel);
+  const root = await repoPath();
+  const abs = path.join(root, rel);
   let entries: import("fs").Dirent[];
   try {
     entries = await fs.readdir(abs, { withFileTypes: true });
@@ -199,6 +215,7 @@ export async function readRepoTree(rel = ""): Promise<RepoFile[]> {
   }
   const out: RepoFile[] = [];
   for (const e of entries) {
+    if (e.name === ".togaf" || e.name === ".git" || e.name === "node_modules") continue;
     const childRel = path.join(rel, e.name);
     if (e.isDirectory()) {
       out.push({
@@ -215,13 +232,25 @@ export async function readRepoTree(rel = ""): Promise<RepoFile[]> {
 }
 
 export async function readRepoFile(rel: string): Promise<string> {
-  const abs = path.join(REPO_ROOT, rel);
+  const root = await repoPath();
+  const abs = path.join(root, rel);
   const normalised = path.resolve(abs);
-  if (!normalised.startsWith(path.resolve(REPO_ROOT))) {
+  if (!normalised.startsWith(path.resolve(root))) {
     throw new Error("Path traversal blocked");
   }
   return fs.readFile(normalised, "utf8");
 }
 
-// re-export for convenience
+// -------------------- Helpers --------------------
+
+export async function activeRepoInfo() {
+  const r = await resolveActiveRepo();
+  return {
+    ...r,
+    stateDir: stateDirFor(r.repoPath),
+    engagementsFile: engagementsFileFor(r.repoPath),
+    maturityFile: maturityFileFor(r.repoPath),
+  };
+}
+
 export { ADM_PHASES, deliverablesForPhase };

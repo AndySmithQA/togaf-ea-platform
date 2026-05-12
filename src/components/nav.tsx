@@ -2,7 +2,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { LayoutDashboard, GitBranch, FileStack, Gauge, Library, Workflow } from "lucide-react";
+import { LayoutDashboard, GitBranch, FileStack, Gauge, Library, Workflow, Terminal, Settings } from "lucide-react";
+import * as React from "react";
 
 const NAV = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard },
@@ -11,9 +12,11 @@ const NAV = [
   { href: "/maturity", label: "Maturity", icon: Gauge },
   { href: "/repository", label: "Repository", icon: Library },
   { href: "/deliverables", label: "Deliverables", icon: FileStack },
+  { href: "/commands", label: "Slash commands", icon: Terminal },
+  { href: "/settings", label: "Settings", icon: Settings },
 ];
 
-export function Nav() {
+export function Nav({ children }: { children?: React.ReactNode }) {
   const path = usePathname() ?? "";
   return (
     <aside className="hidden md:flex w-60 shrink-0 flex-col border-r bg-card/40 px-3 py-4">
@@ -45,9 +48,12 @@ export function Nav() {
           );
         })}
       </nav>
-      <div className="mt-auto px-2 text-[10px] text-muted-foreground space-y-1">
-        <div>Built on TOGAF® Standard, 10th Ed.</div>
-        <div>Mock-up &middot; not for production use</div>
+      <div className="mt-auto space-y-2 px-2">
+        {children}
+        <div className="text-[10px] text-muted-foreground space-y-1">
+          <div>Built on TOGAF® Standard, 10th Ed.</div>
+          <div>Slash commands install into <code>.cursor/commands/togaf/</code></div>
+        </div>
       </div>
     </aside>
   );
