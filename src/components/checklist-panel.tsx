@@ -9,6 +9,24 @@ import type { ChecklistItem, DocumentRecord } from "@/types";
 import { Loader2, ShieldCheck, Sparkles, Stamp } from "lucide-react";
 import { useRouter } from "next/navigation";
 
+const CHECKLIST_DT_FORMATTER = new Intl.DateTimeFormat("en-GB", {
+  year: "numeric",
+  month: "short",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+  second: "2-digit",
+  hour12: false,
+  timeZone: "UTC",
+});
+
+function formatChecklistDateTime(iso?: string): string {
+  if (!iso) return "";
+  const value = new Date(iso);
+  if (Number.isNaN(value.getTime())) return "";
+  return `${CHECKLIST_DT_FORMATTER.format(value)} UTC`;
+}
+
 export function ChecklistPanel({
   engagementId,
   doc,
@@ -143,7 +161,7 @@ export function ChecklistPanel({
                   <div>{c.label}</div>
                   {c.checkedBy && (
                     <div className="text-[11px] text-muted-foreground">
-                      By {c.checkedBy} · {c.checkedAt ? new Date(c.checkedAt).toLocaleString() : ""}
+                      By {c.checkedBy} · {formatChecklistDateTime(c.checkedAt)}
                     </div>
                   )}
                 </label>
@@ -163,7 +181,7 @@ export function ChecklistPanel({
                 Signed off by {doc.signoff.signedOffBy}
               </div>
               <div className="text-muted-foreground mt-1">
-                {doc.signoff.signedOffAt ? new Date(doc.signoff.signedOffAt).toLocaleString() : ""}
+                {formatChecklistDateTime(doc.signoff.signedOffAt)}
               </div>
               {doc.signoff.comment && <div className="mt-2 italic">&ldquo;{doc.signoff.comment}&rdquo;</div>}
             </div>

@@ -130,11 +130,14 @@ export default async function DashboardPage() {
           <CardContent className="flex flex-col items-center">
             <MaturityRadar scores={maturity.scores} />
             <Separator className="my-4" />
-            <div className="grid grid-cols-2 gap-x-6 gap-y-1 text-xs w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs w-full">
               {maturity.scores.map((s) => (
-                <div key={s.dimension} className="flex justify-between">
-                  <span className="text-muted-foreground truncate pr-2">{s.dimension}</span>
-                  <span className="font-mono">{s.level} · {maturityLevelName(s.level)}</span>
+                <div key={s.dimension} className="rounded-md border bg-muted/20 px-3 py-2">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="text-muted-foreground leading-tight">{s.dimension}</span>
+                    <span className="text-sm font-semibold tabular-nums">{s.level}</span>
+                  </div>
+                  <div className="mt-1 text-[11px] text-muted-foreground">{maturityLevelName(s.level)}</div>
                 </div>
               ))}
             </div>

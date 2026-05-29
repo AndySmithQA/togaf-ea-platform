@@ -11,8 +11,10 @@ export function MaturityRadar({
   size?: number;
   max?: number;
 }) {
-  const cx = size / 2;
-  const cy = size / 2;
+  const padding = 72;
+  const canvas = size + padding * 2;
+  const cx = padding + size / 2;
+  const cy = padding + size / 2;
   const r = size * 0.38;
   const N = scores.length;
   if (N === 0) return null;
@@ -33,7 +35,7 @@ export function MaturityRadar({
   const ringRatios = [0.2, 0.4, 0.6, 0.8, 1];
 
   return (
-    <svg viewBox={`0 0 ${size} ${size}`} className="w-full max-w-[420px] h-auto">
+    <svg viewBox={`0 0 ${canvas} ${canvas}`} className="w-full max-w-[520px] h-auto">
       {ringRatios.map((rr, i) => {
         const pts = scores.map((_, j) => {
           const ang = -Math.PI / 2 + (j * 2 * Math.PI) / N;
