@@ -23,7 +23,7 @@ inside `architecture-repository/` and a tiny state JSON inside `.togaf/state/`.
 
 ```bash
 # 1. Get the toolkit (clone or install via npx from a git tag in your fork)
-git clone https://github.com/<you>/togaf-ea-platform.git
+git clone https://github.com/AndySmithQA/togaf-ea-platform.git
 cd togaf-ea-platform
 npm install
 npm run build      # builds the dashboard once
